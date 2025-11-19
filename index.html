@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Performance Indicator AB12</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Key Performance Indicator AB12</h1>
+    </header>
+    <div class="charts">
+        <canvas id="outputChart"></canvas>
+        <canvas id="urelChart"></canvas>
+        <canvas id="pierderiChart"></canvas>
+        <canvas id="forChart"></canvas>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" accept="application/json" required>
+                <button type="submit">Upload</button>
+            </form>
+            <button onclick="refreshData()">Reîmprospătează</button>
+            <p class="signature">by csf4clj@bosch.com</p>
+            <p id="uploadStatus"></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
